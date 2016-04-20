@@ -54,7 +54,7 @@ typedef struct {
 
 RedditState *globalState;
 
-wchar_t *linkScreenHelp[19] = {
+wchar_t *linkScreenHelp[21] = {
     L"Keypresses:",
     L"Link Screen:",
     L"- k / UP -- Move up one link in the list",
@@ -233,7 +233,7 @@ void commentScreenDown(CommentScreen *screen)
     }
 }
 
-void commentScreenLevelDown(CommentScreen *screen) 
+void commentScreenLevelDown(CommentScreen *screen)
 {
     int newPosition = screen->selected;
     int indentCount = screen->lines[screen->selected]->indentCount;
